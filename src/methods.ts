@@ -52,6 +52,14 @@ Litepicker.prototype.show = function (el = null) {
 
   this.ui.style.position = 'absolute';
   this.ui.style.display = 'block';
+
+  const isStatic = this.options.static || false;
+
+  if (isStatic) {
+    this.ui.style.position = 'relative';
+    this.ui.style.display = 'inline-block';
+  }
+
   this.ui.style.zIndex = this.options.zIndex;
 
   const position = this.findPosition(element);
