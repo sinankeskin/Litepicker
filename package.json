@@ -36,7 +36,6 @@
     "url": "https://github.com/wakirin/litepicker/issues"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
