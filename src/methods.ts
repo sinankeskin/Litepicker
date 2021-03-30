@@ -31,6 +31,7 @@ Litepicker.prototype.show = function (el = null) {
 
   const element = el ? el : this.options.element;
   this.triggerElement = element;
+  this._isShown = true;
 
   if (this.isShowning()) {
     return;
@@ -65,6 +66,8 @@ Litepicker.prototype.show = function (el = null) {
 };
 
 Litepicker.prototype.hide = function () {
+  this._isShown = false;
+
   if (!this.isShowning()) {
     return;
   }

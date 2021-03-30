@@ -10,6 +10,9 @@ export declare class LPCore extends EventEmitter {
     protected nextFocusElement: HTMLElement;
     protected calendars: DateTime[];
     protected readonly pluralSelector: (arg: number) => string;
+    protected _isShown: boolean;
+    get isShown(): boolean;
+    get isHidden(): boolean;
     protected options: ILPConfiguration;
     constructor(options: ILPConfiguration);
     DateTime(date: any, format?: any): DateTime;

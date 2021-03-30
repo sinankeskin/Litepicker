@@ -15,6 +15,15 @@ export class LPCore extends EventEmitter {
   protected nextFocusElement: HTMLElement;
   protected calendars: DateTime[] = [];
   protected readonly pluralSelector: (arg: number) => string;
+  protected _isShown: boolean = false;
+
+  public get isShown() {
+    return this._isShown;
+  }
+
+  public get isHidden() {
+    return !this._isShown;
+  }
 
   protected options: ILPConfiguration = {
     element: null,
