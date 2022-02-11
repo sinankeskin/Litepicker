@@ -50,7 +50,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.8.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "parallel-webpack": "^2.6.0",
     "postcss-loader": "^3.0.0",
     "proxy-polyfill": "^0.3.0",
